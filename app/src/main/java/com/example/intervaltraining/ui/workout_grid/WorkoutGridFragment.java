@@ -37,6 +37,7 @@ public class WorkoutGridFragment extends Fragment {
             @Override
             public void onChanged(@Nullable String s) {
                 workout_grid.setClickable(true);
+                workout_grid.setNumColumns(2);
                 workout_grid.setAdapter(adapter);
 
 
