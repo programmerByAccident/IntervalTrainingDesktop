@@ -1,7 +1,9 @@
 package com.example.intervaltraining.database;
 
-public class DataBaseBuilder  {
+import androidx.room.RoomDatabase;
 
+
+abstract class DataBaseBuilder  extends RoomDatabase {
     /*
 
     Database Structure:

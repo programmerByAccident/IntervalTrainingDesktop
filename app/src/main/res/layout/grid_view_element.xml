@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_height="200dp"
     android:layout_margin="8dp"
-    android:outlineAmbientShadowColor="@color/black"
-    app:strokeWidth="1dp"
-    android:layout_height="match_parent">
-    <RelativeLayout
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="6dp">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:id="@+id/title_grid_view_text">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="1dp"
             android:id="@+id/content_grid_view_text">
         </TextView>
-        <ImageView
 
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/baseline_more_horiz_24"
-            android:layout_alignParentRight="true"></ImageView>
-    </RelativeLayout>
+            app:srcCompat="@mipmap/baseline_more_horiz_black_18" />
+
+    </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
